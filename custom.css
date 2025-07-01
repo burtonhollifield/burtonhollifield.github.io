@@ -1,0 +1,63 @@
+/* ============================
+   Custom Reveal.js Styling
+   ============================ */
+
+/* ============================
+   Slide Title and Layout Tuning
+   ============================ */
+
+/* Slide titles (h1) — closer to top, CMU red, clean spacing */
+*.reveal h1 {
+  font-size: 2.2em;
+  color: #990000;     /* CMU red */
+/*  margin-top: 0;      /* no extra space above */
+/*  margin-bottom: 0.2em; /* tighter space below */
+/*  padding-top: 0;
+  line-height: 1.1;   /* tighter vertical rhythm */
+}
+
+*.reveal h2 {
+  font-size: 2.2em;
+  color: #990000;     /* CMU red */
+/*  margin-top: 0;      /* no extra space above */
+  margin-bottom: 1.0em; /* tighter space below */
+/*  padding-top: 0;
+  line-height: 1.1;   /* tighter vertical rhythm */
+}
+
+/* Slide content spacing — closer to title without overlap */
+.reveal section {
+  padding-top: 40px;  /* reduced from 50–100px */
+}
+
+/* ✅ 3. Invisible bullets (but preserve indentation) */
+.reveal ul {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+.reveal ul li::marker {
+  content: "";
+}
+
+/* ✅ 4. Hide slide number on title slide (with or without logo) */
+.reveal .has-logo + .slide-number,
+.reveal .title-slide + .slide-number,
+.reveal .slides section:first-of-type + .slide-number {
+  display: none !important;
+}
+
+/* ✅ 5. Show slide number on all other slides */
+.reveal .slide-number {
+  display: block !important;
+  font-size: 0.8em;
+  color: #333;
+  bottom: 1em;
+  right: 1.5em;
+}
+
+/* ✅ 6. Optional: Left-align all slide content */
+.reveal .slides section {
+  text-align: left;
+}
+
+
