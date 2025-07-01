@@ -1,3 +1,3 @@
-# .burtonhollifield.github.io
+# burtonhollifield.github.io
 
 Testing
